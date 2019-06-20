@@ -1,0 +1,25 @@
+#input {
+    margin-bottom: 3px;
+}
+
+#results {
+    font-weight: bold;
+}
+
+#large {
+    font-size: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px darkgray solid;
+    height: 20px;
+    width: 30px;
+}
+
+#progress {
+    color: lightgray;
+}

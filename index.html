@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Box Calculator</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Box Calculator</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto"></ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3">
+        <div class="card pb-3">
+            <div id="input" class="card-body">
+                <span id="large">Total:</span> <input id="total" type="number" /></br>
+                <button class=" mt-1 btn btn-info" id="submit">Submit</button>
+                <button class="mt-1 btn btn-danger" id="clear">Clear</button>
+            </div>
+            <div id="results" class="ml-3 mr-3">
+                <div class="rows card-text"><span>Rows:</span> <span id="rows"></span></div>
+                <span>Boxes:</span> <span id="boxes"></span>
+                <p id="percent" class=" card-text mt-2"></p>
+                <div class="progress">
+                    <div id="progress" class="progress-bar progress-bar-striped" style="width: 0%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="table-cont" class="container mt-2"></div>
+    <script src="main.js" type="module"></script>
+</body>
+
+</html>
